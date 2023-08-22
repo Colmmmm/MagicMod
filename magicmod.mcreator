@@ -13,21 +13,6 @@
       }
     },
     {
-      "name": "BasicSpell",
-      "type": "rangeditem",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "basic_spell",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/magicmod/entity/BasicSpellEntity.java",
-          "src/main/resources/assets/magicmod/models/item/basic_spell.json",
-          "src/main/java/net/mcreator/magicmod/item/BasicSpellItem.java"
-        ]
-      }
-    },
-    {
       "name": "BasicSpellRangedItemUsed",
       "type": "procedure",
       "sortid": 3,
@@ -42,7 +27,75 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "BasicSpellProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_spell_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/magicmod/procedures/BasicSpellProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ManaHudDisplayProcedure",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_hud_display_procedure",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/magicmod/procedures/ManaHudDisplayProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BasicSpell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_spell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/magicmod/models/item/basic_spell.json",
+          "src/main/java/net/mcreator/magicmod/item/BasicSpellItem.java"
         ]
       }
     }
@@ -70,7 +123,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Utils",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "magicmod",
