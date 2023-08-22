@@ -53,6 +53,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "100.0"
+    },
+    {
+      "name": "Max_mana",
+      "type": "number",
+      "scope": "map",
+      "value": "100.0"
     }
   ],
   "sound_elements": [],
