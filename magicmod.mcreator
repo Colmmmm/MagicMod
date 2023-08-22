@@ -1,9 +1,66 @@
 {
-  "mod_elements": [],
-  "variable_elements": [],
+  "mod_elements": [
+    {
+      "name": "ManaOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/magicmod/client/screens/ManaOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "BasicSpell",
+      "type": "rangeditem",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_spell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/magicmod/entity/BasicSpellEntity.java",
+          "src/main/resources/assets/magicmod/models/item/basic_spell.json",
+          "src/main/java/net/mcreator/magicmod/item/BasicSpellItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BasicSpellRangedItemUsed",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_spell_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/magicmod/procedures/BasicSpellRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Mana",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.magicmod.basic_spell": "Basic Spell",
+      "gui.magicmod.mana_overlay.label_100100": "100/100"
+    }
   },
   "foldersRoot": {
     "name": "~",
