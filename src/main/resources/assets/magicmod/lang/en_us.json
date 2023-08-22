@@ -1,1 +1,4 @@
-{}
+{
+  "item.magicmod.basic_spell": "Basic Spell",
+  "gui.magicmod.mana_overlay.label_100100": "100/100"
+}
