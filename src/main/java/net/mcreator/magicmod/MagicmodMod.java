@@ -13,8 +13,6 @@
  */
 package net.mcreator.magicmod;
 
-import software.bernie.geckolib3.GeckoLib;
-
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -56,7 +54,6 @@ public class MagicmodMod {
 		MagicmodModItems.REGISTRY.register(bus);
 		MagicmodModEntities.REGISTRY.register(bus);
 
-		GeckoLib.initialize();
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

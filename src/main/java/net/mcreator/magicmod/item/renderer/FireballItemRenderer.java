@@ -1,12 +1,5 @@
 package net.mcreator.magicmod.item.renderer;
 
-import software.bernie.geckolib3.util.RenderUtils;
-import software.bernie.geckolib3.renderers.geo.GeoItemRenderer;
-import software.bernie.geckolib3.geo.render.built.GeoModel;
-import software.bernie.geckolib3.geo.render.built.GeoBone;
-import software.bernie.geckolib3.core.controller.AnimationController;
-import software.bernie.geckolib3.core.IAnimatableModel;
-
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.InteractionHand;
