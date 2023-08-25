@@ -13,6 +13,8 @@
  */
 package net.mcreator.magicmod;
 
+import software.bernie.geckolib3.GeckoLib;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -29,8 +31,11 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.magicmod.init.MagicmodModMenus;
 import net.mcreator.magicmod.init.MagicmodModItems;
+import net.mcreator.magicmod.init.MagicmodModFeatures;
 import net.mcreator.magicmod.init.MagicmodModEntities;
+import net.mcreator.magicmod.init.MagicmodModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -51,9 +56,15 @@ public class MagicmodMod {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+		MagicmodModBlocks.REGISTRY.register(bus);
 		MagicmodModItems.REGISTRY.register(bus);
 		MagicmodModEntities.REGISTRY.register(bus);
 
+		MagicmodModFeatures.REGISTRY.register(bus);
+
+		MagicmodModMenus.REGISTRY.register(bus);
+
+		GeckoLib.initialize();
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

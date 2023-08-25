@@ -1,5 +1,8 @@
 package net.mcreator.magicmod.init;
 
+import software.bernie.geckolib3.item.GeoArmorItem;
+import software.bernie.geckolib3.core.IAnimatable;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;

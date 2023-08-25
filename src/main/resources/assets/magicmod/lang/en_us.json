@@ -1,5 +1,7 @@
 {
   "item.magicmod.basic_spell": "Basic Spell",
+  "block.magicmod.basic_ore": "Basic Ore",
+  "gui.magicmod.altar.label_spell_altar": "Spell Altar",
   "gui.magicmod.mana_overlay.label_100100": "100/100",
   "item.magicmod.fireball": "Fireball"
 }

@@ -135,6 +135,37 @@
           }
         ]
       }
+    },
+    {
+      "name": "BasicOre",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/magicmod/models/block/basic_ore.json",
+          "src/main/java/net/mcreator/magicmod/world/features/ores/BasicOreFeature.java",
+          "src/main/java/net/mcreator/magicmod/block/BasicOreBlock.java",
+          "src/main/resources/assets/magicmod/blockstates/basic_ore.json",
+          "src/main/resources/data/magicmod/forge/biome_modifier/basic_ore_biome_modifier.json",
+          "src/main/resources/assets/magicmod/models/item/basic_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "Altar",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/magicmod/client/gui/AltarScreen.java",
+          "src/main/java/net/mcreator/magicmod/world/inventory/AltarMenu.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -149,6 +180,8 @@
   "language_map": {
     "en_us": {
       "item.magicmod.basic_spell": "Basic Spell",
+      "block.magicmod.basic_ore": "Basic Ore",
+      "gui.magicmod.altar.label_spell_altar": "Spell Altar",
       "gui.magicmod.mana_overlay.label_100100": "100/100",
       "item.magicmod.fireball": "Fireball"
     }
@@ -174,8 +207,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.magicmod",
     "lockBaseModFiles": false
   },

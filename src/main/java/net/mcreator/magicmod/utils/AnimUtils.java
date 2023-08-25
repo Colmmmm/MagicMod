@@ -1,5 +1,7 @@
 package net.mcreator.magicmod.utils;
 
+import software.bernie.geckolib3.geo.render.built.GeoBone;
+
 import org.checkerframework.checker.units.qual.g;
 
 import net.minecraftforge.fml.util.ObfuscationReflectionHelper;

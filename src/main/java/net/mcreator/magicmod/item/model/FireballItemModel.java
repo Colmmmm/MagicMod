@@ -1,5 +1,7 @@
 package net.mcreator.magicmod.item.model;
 
+import software.bernie.geckolib3.model.AnimatedGeoModel;
+
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.magicmod.item.FireballItem;
