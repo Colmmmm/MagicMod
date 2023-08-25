@@ -30,7 +30,7 @@
     "bulletDamage": 5.0,
     "bulletKnockback": 5,
     "bulletParticles": false,
-    "bulletIgnitesFire": false,
+    "bulletIgnitesFire": true,
     "bulletItemTexture": {
       "value": "Blocks.DIRT#0"
     },

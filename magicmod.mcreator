@@ -21,9 +21,9 @@
       "registry_name": "basic_spell",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/magicmod/entity/BasicSpellEntity.java",
+          "src/main/java/net/mcreator/magicmod/item/BasicSpellItem.java",
           "src/main/resources/assets/magicmod/models/item/basic_spell.json",
-          "src/main/java/net/mcreator/magicmod/item/BasicSpellItem.java"
+          "src/main/java/net/mcreator/magicmod/entity/BasicSpellEntity.java"
         ]
       }
     },
@@ -45,6 +45,41 @@
           }
         ]
       }
+    },
+    {
+      "name": "Fireball",
+      "type": "animateditem",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/magicmod/item/FireballItem.java",
+          "src/main/java/net/mcreator/magicmod/item/renderer/FireballItemRenderer.java",
+          "src/main/java/net/mcreator/magicmod/item/model/FireballItemModel.java",
+          "src/main/resources/assets/magicmod/models/item/fireball.json"
+        ]
+      }
+    },
+    {
+      "name": "BasicSpellCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_spell_can_use_ranged_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/magicmod/procedures/BasicSpellCanUseRangedItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -53,19 +88,14 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "100.0"
-    },
-    {
-      "name": "Max_mana",
-      "type": "number",
-      "scope": "map",
-      "value": "100.0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
       "item.magicmod.basic_spell": "Basic Spell",
-      "gui.magicmod.mana_overlay.label_100100": "100/100"
+      "gui.magicmod.mana_overlay.label_100100": "100/100",
+      "item.magicmod.fireball": "Fireball"
     }
   },
   "foldersRoot": {
@@ -84,8 +114,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.magicmod",
     "lockBaseModFiles": false
   },

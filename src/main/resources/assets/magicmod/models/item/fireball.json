@@ -1,0 +1,6 @@
+{
+  "parent": "magicmod:displaysettings/fireball.item",
+  "textures": {
+    "layer0": "magicmod:items/fireball"
+  }
+}
